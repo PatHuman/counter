@@ -6,8 +6,23 @@
 
   <groupId>org.jboss.example.counter</groupId>
   <artifactId>counter</artifactId>
-  <version>1</version> 
+  <version>1</version>
   <packaging>war</packaging>
+  <dependencies>
+  <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.0.1</version>
+    <scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<dependency>
+    <groupId>log4j</groupId>
+    <artifactId>log4j</artifactId>
+    <version>1.2.17</version>
+</dependency>
+
+</dependencies>
 
   <name>Archetype - counter</name>
 
