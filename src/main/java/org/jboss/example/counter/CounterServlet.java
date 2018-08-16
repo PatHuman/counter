@@ -70,9 +70,9 @@ public class CounterServlet extends HttpServlet {
 
         out.println("Counter = " + counter.getValue());
         out.println("<br><table border=1 cellpadding=2><caption><h4>Served from</h4></caption>" );
-        out.println("<tr><td>ServerName</td><td>" + request.getServerName() +"</td></tr>");
-        out.println("<tr><td>ServerPort </td><td>" + request.getServerPort() +"</td></tr>");
+        out.println("<tr><td>Node</td><td>" + System.getProperty("jboss.node.name") +"</td></tr>");
         out.println("<tr><td>sessionID </td><td> " + request.getSession().getId() +"</td></tr>");
+        out.println("<tr><td>ServerName</td><td>" + request.getServerName() +"</td></tr>");
         out.println("</table></body>");
         out.println("</html>");
         out.close();
